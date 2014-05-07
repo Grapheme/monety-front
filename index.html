@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1200, initial-scale=0.1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+         
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <header>
+            <div class="row max-width-class margin-auto">
+                <h1 class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+                    monety.pro
+                </h1>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-top-5">
+                    <form role="form">
+                        <input type="text" class="form-control" placeholder="Text input">
+                    </form>
+                    <div class="head-actions margin-top-10 margin-bottom-10 text-center">
+                        <button type="button" class="display-inline width-130 margin-right-5 btn btn-primary regular-12 uppercase">Купить монеты</button>
+                        <button type="button" class="display-inline width-130 btn btn-success regular-12 uppercase">Продать монеты</button>
+                    </div>
+                </div>                    
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="best-good">
+                        <div class="best-good-capt text-center">
+                            <span class="fa fa-trophy regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Товар дня</span>
+                        </div>
+                        <div class="row margin-top-5 margin-bottom-10">
+                            <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <figure class="ava">
+                                    <a href="#">
+                                        <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 regular-12">
+                                <a href="#">1/2 копейки 1899 1909 1912 1913 спб</a>
+                                <div class="margin-top-5">
+                                    <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="cart text-center">
+                        <div class="cart-capt">
+                            <span class="fa fa-shopping-cart regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Корзина</span>
+                        </div>
+                        <div class="cart-cont regular-12">
+                            <a href="#">5</a> товаров на сумму <span>2500 руб</span>
+                        </div>
+                    </div>
+                    <div class="reg text-center margin-top-10">
+                        <div class="reg-capt">
+                            <span class="fa fa-user regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Личный кабинет</span>
+                        </div>
+                        <div class="reg-cont regular-12 margin-top-5">
+                            <a href="#" class="margin-right-10">Вход</a>
+                            <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse no-margin" role="navigation">
+                <ul class="nav-list list-unstyled max-width-class text-center">
+                    <li class="nav-item"><a href="#">Новости</a>
+                    <li class="nav-item"><a href="#">Выставки</a>
+                    <li class="nav-item"><a href="#">Бизнес</a>
+                    <li class="nav-item"><a href="#">Публикации</a>
+                    <li class="nav-item"><a href="#">Карьера</a>
+                    <li class="nav-item"><a href="#">Организации</a>
+                    <li class="nav-item"><a href="#">Продукция</a>
+                    <li class="nav-item"><a href="#">Интерактив</a>
+                    <li class="nav-item"><a href="#">Справка</a>
+                    <li class="nav-item"><a href="#">Надзор</a>
+                </ul>
+            </nav>
+            <div class="navbar navbar-default">
+                <ul class="sub-nav list-unstyled max-width-class text-center">
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>изделий</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>организаций</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Форум<br>ювелиров</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Рейтинг<br>сайтов</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Черный<br>список</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>выставки</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>мастерские</a>
+                </ul>
+            </div>
+        </header>
+        <main class="row content max-width-class" role="main">
+            <aside class="aside col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <h2 class="aside-header">Магазин монет</h2>
+                <ul class="aside-list list-unstyled">
+                    <li class="aside-item"><a href="#">Австралия и Океания(19099)</a></li>
+                    <li class="aside-item"><a href="#">Азия(60000)</a></li>
+                    <li class="aside-item"><a href="#">Аксессуары и литература(8990)</a></li>
+                    <li class="aside-item"><a href="#">Америка(65353)</a></li>
+                    <li class="aside-item"><a href="#">Античные(6035)</a></li>
+                    <li class="aside-item"><a href="#">Африка(38402)</a></li>
+                    <li class="aside-item"><a href="#">Велибритания(20938)</a></li>
+                    <li class="aside-item"><a href="#">Германия и Австрия(48063)</a></li>
+                    <li class="aside-item"><a href="#">Европа(154038)</a></li>
+                    <li class="aside-item"><a href="#">Золотая Орда(2693)</a></li>
+                    <li class="aside-item"><a href="#">Золотые инвестиционные монеты(199)</a></li>
+                    <li class="aside-item"><a href="#">Россия до 1917 года(114464)</a></li>
+                    <li class="aside-item"><a href="#">Россия и СССР 1917-1991 года(119302)</a></li>
+                    <li class="aside-item"><a href="#">Россия после 1991 года(90575)</a></li>
+                    <li class="aside-item"><a href="#">Специальные выпуски, коллекции(5987)</a></li>
+                    <li class="aside-item"><a href="#">Страны СНГ и Балтии(19203)</a></li>
+                    <li class="aside-item"><a href="#">Копии, реплики(10809)</a></li>
+                    <li class="aside-item"><a href="#">Платежные жетоны(1881)</a></li>
+                    <li class="aside-item"><a href="#">Сувенирные монеты(766)</a></li>
+                    <li class="aside-item"><a href="#">Разное в монетах</a></li>
+                </ul>
+                <h2 class="aside-header">Каталог монет</h2>
+                <ul class="aside-list list-unstyled">
+                    <li class="aside-item"><a href="#">Наборы монет</a></li>
+                    <li class="aside-item"><a href="#">Банкноты</a></li>
+                    <li class="aside-item"><a href="#">Подарочные наборы</a></li>
+                    <li class="aside-item"><a href="#">Аксессуары</a></li>
+                    <li class="aside-item"><a href="#">Металлоискатели</a></li>
+                    <li class="aside-item"><a href="#">Программа нумизмата</a></li>
+                    <li class="aside-item"><a href="#">Приложния для смартфона</a></li>
+                </ul>
+                <h2 class="aside-header">Аукцион монет</h2>
+                <ul class="aside-list list-unstyled">
+                    <li class="aside-item"><a href="#">Аукцион монет</a></li>
+                    <li class="aside-item"><a href="#">Правила аукциона</a></li>
+                </ul>
+                <h2 class="aside-header">Нумизмату</h2>
+                <ul class="aside-list list-unstyled">
+                    <li class="aside-item"><a href="#">Главная</a></li>
+                    <li class="aside-item"><a href="#">Новости нумизматики</a></li>
+                    <li class="aside-item"><a href="#">Канал новостей</a></li>
+                    <li class="aside-item"><a href="#">Библиотека нумизмата</a></li>
+                    <li class="aside-item"><a href="#">Клуб Нумизмат</a></li>
+                    <li class="aside-item"><a href="#">Регистрация</a></li>
+                    <li class="aside-item"><a href="#">Форум нумизматов</a></li>
+                    <li class="aside-item"><a href="#">Архив форума</a></li>
+                    <li class="aside-item"><a href="#">Черный список</a></li>
+                    <li class="aside-item"><a href="#">Форум кладоискателей</a></li>
+                    <li class="aside-item"><a href="#">Объявления пользователей</a></li>
+                    <li class="aside-item"><a href="#">Нужны монеты</a></li>
+                    <li class="aside-item"><a href="#">New ценник на монеты</a></li>
+                    <li class="aside-item"><a href="#">Стоимость монет</a></li>
+                    <li class="aside-item"><a href="#">Нумизматический чат</a></li>
+                    <li class="aside-item"><a href="#">Распознавание монет</a></li>
+                    <li class="aside-item"><a href="#">Юбилейные монеты</a></li>
+                    <li class="aside-item"><a href="#">Монета, история</a></li>
+                    <li class="aside-item"><a href="#">Подписка</a></li>
+                    <li class="aside-item"><a href="#">Видео для нумизматов</a></li>
+                    <li class="aside-item"><a href="#">Игровой раздел</a></li>
+                    <li class="aside-item"><a href="#">Антиквариат</a></li>
+                    <li class="aside-item"><a href="#">Золотой червонец</a></li>
+                    <li class="aside-item"><a href="#">Антикварное обозрение</a></li>
+                </ul>
+            </aside>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                <section class="ending-aucs margin-bottom-40">
+                    <h2 class="margin-bottom-40 regular-24">Завершающиеся аукционы — купить лот, выставить лот</h2>
+                    <ul class="lots-list list-unstyled row">
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont text-center" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                    <div class="bottom-left">
+                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <article class="news row margin-bottom-40">
+                    <section class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="regular-20"><span class="fa fa-file-text-o"></span> Новости</h2>
+                        <div class="main-new">
+                            <div class="new-head relative" style="background: url(http://upload.wikimedia.org/wikipedia/commons/1/1d/Rostov-on-don_skyline.jpg) no-repeat 0 0 / cover;">
+                                <h3 class="new-capt">
+                                    <a href="#">Корейский оператор организовал к своему 30-летию «мобильный оркестр»</a>
+                                </h3>
+                            </div>
+                            <div class="new-body margin-top-10 regular-12">
+                                Южнокорейский оператор SK Telecom отпраздновал 30-летие своей работы на рынке мобильной связи выступлением «оркестра», «музыкантами» в котором выступили 34 телефона. Свою партию исполнили модификация Motorola DynaTAC ...
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h3 class="regular-20"><span class="fa fa-rss"></span> Лента новостей</h3>
+                        <ul class="news-list list-unstyled regular-12 margin-bottom-10">
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Российский наркоконтроль проверит «Казантип»</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Корейцы представили дешевый способ
+                                    выращивания графеновых пластин</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Татьяна Тарасова пожалела об
+                                    упущенном золоте Олимпиады-2018</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <footer>
+                            <div class="margin-bottom-10">
+                                <a  class="reg-color-light regular-12" href="#"><span class="fa fa-calendar"></span> Архив новостей</a>
+                            </div>
+                            <div>
+                                <a  class="reg-color-light regular-12" href="#"><span class="fa fa-pencil-square-o"></span> Подписка на новости</a>
+                            </div>
+                        </footer>
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h3 class="regular-20"><span class="fa fa-pencil"></span> Статьи</h3>
+                        <ul class="artcl-list list-unstyled regular-12 margin-bottom-10">
+                            <li class="artcl-item margin-bottom-10">
+                                <a href="#">Ювелирный рынок: «Кто не сможет, тот уйдет»</a>
+                            </li>
+                            <li class="artcl-item margin-bottom-10">
+                                <a href="#">Искусственные бриллианты – достойная замена натуральным</a>
+                            </li>
+                            <li class="artcl-item margin-bottom-10">
+                                <a href="#">Базель тенденциозный</a>
+                            </li>
+                            <li class="artcl-item margin-bottom-10">
+                                <a href="#">Бриллиантовая неделя в Якутске: как алмаз превращается в бриллиант</a>
+                            </li>
+                        </ul>
+                        <footer class="margin-bottom-10">
+                            <a  class="reg-color-light regular-12" href="#"><span class="fa fa-list-ul"></span> Все публикации</a>
+                        </footer>
+                    </section>
+                </article>
+
+                <section class="coin-store margin-bottom-40">
+                    <h2 class="margin-bottom-40 regular-24">Магазин монет — купля(продажа) монет, банкнот, альбомов для монет</h2>
+                    <ul class="lots-list list-unstyled row">
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <a class="img-cont" href="#">
+                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
+                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
+                                    <div class="margin-top-5">
+                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <article class="catalog row margin-bottom-40">
+                    <section class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="regular-20"><span class="fa fa-th-large"></span> Каталог товаров</h2>
+                        <h3>Украшения из золота: <a href="#">687</a></h3>
+                        <div>
+                            Гарнитуры 19, Браслеты 39, Булавки и Броши 5,
+                            Кулоны и Колье 57, Серьги 126, Кольца 243,
+                            Пуссеты 29, Подвески 107, Мужские кольца 5, Брелоки 11, Цепочки 11
+                        </div>
+                        <h3>Украшения из серебра: <a href="#">359</a></h3>
+                        Кольца 91, Серьги 42, Подвески 48, Браслеты 34, Колье 20, Брелоки 9
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h2 class="regular-20"><span class="fa fa-files-o"></span> Объявления</h2>
+                        <ul class="news-list list-unstyled regular-12 margin-bottom-10">
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">4 Светодиодные линейки для ювелиров.</a>
+                                </div>
+                                <div class="news-town">
+                                    город: Москва
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Ювелирное производство</a>
+                                </div>
+                                <div class="news-town">
+                                    город: Москва
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Продается франшиза Danish Fashion Jewelry</a>
+                                </div>
+                                <div class="news-town">
+                                    город: Москва
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Продается франшиза Spinning Jewelery</a>
+                                </div>
+                                <div class="news-town">
+                                    город: Москва
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h2 class="regular-20"><span class="fa fa-comments-o "></span> Обсуждения</h2>
+                        <ul class="news-list list-unstyled regular-12 margin-bottom-10">
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Как создать свой сайт-визитку</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Хочу снять крышку с процессора. Как и стоит ли?</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Продается франшиза Spinning Jewelery</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+
+                <article class="other row margin-bottom-40">
+                    <section class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="regular-20"><span class="fa fa-video-camera"></span> Видео</h2>
+                        <ul class="videos list-unstyled row">
+                            <li class="video-item col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="video-screen">
+                                    <img src="http://itua.info/wp-content/uploads/2013/12/youtube-logo.png" alt="">
+                                </div>
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Новая классификация продавцов ювелирного магазина</a>
+                                </div>
+                            </li>
+                            <li class="video-item col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="video-screen">
+                                    <img src="http://itua.info/wp-content/uploads/2013/12/youtube-logo.png" alt="">
+                                </div>
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Розыгрыш кольца с бриллиантом 31.12.2013</a>
+                                </div>
+                            </li>
+                            <li class="video-item col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="video-screen">
+                                    <img src="http://itua.info/wp-content/uploads/2013/12/youtube-logo.png" alt="">
+                                </div>
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Новая классификация продавцов ювелирного магазина</a>
+                                </div>
+                            </li>
+                            <li class="video-item col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="video-screen">
+                                    <img src="http://itua.info/wp-content/uploads/2013/12/youtube-logo.png" alt="">
+                                </div>
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Розыгрыш кольца с бриллиантом 31.12.2013</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h2 class="regular-20 margin-bottom-15"><span class="fa fa-book"></span> Книги</h2>
+                        <ul class="list-unstyled">
+                            <li class="book-item margin-bottom-20">
+                                <div class="book-head row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img class="book-pict" src="http://tobiasmastgrave.files.wordpress.com/2011/10/necronomicon-by-richard-a-poppe.jpg" alt="">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-10">
+                                        <div class="book-name margin-top-10">
+                                            Некрономикон
+                                        </div>
+                                        <div class="book-author">
+                                            Абдул Аль-Хазред
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top-5 regular-12">
+                                    <a href="#">4 Светолиодные линейки для ювелиров</a>
+                                </div>
+                            </li>
+                            <li class="book-item margin-bottom-20">
+                                <div class="book-head row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img class="book-pict" src="http://tobiasmastgrave.files.wordpress.com/2011/10/necronomicon-by-richard-a-poppe.jpg" alt="">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-10">
+                                        <div class="book-name margin-top-10">
+                                            Некрономикон
+                                        </div>
+                                        <div class="book-author">
+                                            Абдул Аль-Хазред
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top-5 regular-12">
+                                    <a href="#">4 Светолиодные линейки для ювелиров</a>
+                                </div>
+                            </li>
+                            <li class="book-item margin-bottom-20">
+                                <div class="book-head row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                        <img class="book-pict" src="http://tobiasmastgrave.files.wordpress.com/2011/10/necronomicon-by-richard-a-poppe.jpg" alt="">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-10">
+                                        <div class="book-name margin-top-10">
+                                            Некрономикон
+                                        </div>
+                                        <div class="book-author">
+                                            Абдул Аль-Хазред
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="margin-top-5 regular-12">
+                                    <a href="#">4 Светолиодные линейки для ювелиров</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <h2 class="regular-20"><span class="fa fa-edit"></span> Блоги</h2>
+                        <ul class="news-list list-unstyled regular-12 margin-bottom-10">
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                            <li class="news-item margin-bottom-10">
+                                <div class="news-date reg-color-lighter margin-bottom-5">
+                                    02.04.2014, Анатолий
+                                </div>
+                                <div class="news-text">
+                                    <a href="#">Яндекс отключил ссылочное ранжирование</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+
+            </div>
+        </main>
+        <footer class="main-footer navbar navbar-default">
+            <div class="footer-cont max-width-class margin-auto">
+                <ul class="list-unstyled footer-top-bar regular-12 margin-bottom-20">
+                    <li class="footer-top-item copy">© 2014 monety.pro</li>
+                    <li class="footer-top-item"><a href="#">Новости<br>Выставки</a></li>
+                    <li class="footer-top-item"><a href="#">Бизнес<br>Публикации</a></li>
+                    <li class="footer-top-item"><a href="#">Карьера<br>Организации</a></li>
+                    <li class="footer-top-item"><a href="#">Продукция<br>Интерактив</a></li>
+                    <li class="footer-top-item"><a href="#">Справка<br>Надзор</a></li>
+                </ul>
+                <div class="contacts text-center regular-12 margin-bottom-20">
+                    Email: <a class="margin-lr-5" href="mailto:support@uvelir.info">support@uvelir.info</a> 
+                    Тел./факс: <a href="tel:+78632820411">+7(863)2820411</a>, <a href="tel:+78632820412">2820412</a>, <a href="tel:+78632820413">2820413</a>, <a href="tel:+78632820346">2820346</a>, <a href="tel:+78632820346">2820346</a>, <a href="tel:+78632401488">2401488</a>
+                </div>
+                <ul class="social list-unstyled text-center margin-bottom-20">
+                    <li class="social-item"><a href="#"> <span class="fa fa-vk"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-facebook-square"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-twitter"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-google-plus"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-youtube"></span> </a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
