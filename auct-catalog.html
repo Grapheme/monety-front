@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1200, initial-scale=0.1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+         
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <header>
+            <div class="row max-width-class margin-auto">
+                <h1 class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
+                    monety.pro
+                </h1>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-top-5">
+                    <form role="form">
+                        <input type="text" class="form-control" placeholder="Text input">
+                    </form>
+                    <div class="head-actions margin-top-10 margin-bottom-10 text-center">
+                        <button type="button" class="display-inline width-130 margin-right-5 btn btn-primary regular-12 uppercase">Купить монеты</button>
+                        <button type="button" class="display-inline width-130 btn btn-success regular-12 uppercase">Продать монеты</button>
+                    </div>
+                </div>                    
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="best-good">
+                        <div class="best-good-capt text-center">
+                            <span class="fa fa-trophy regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Товар дня</span>
+                        </div>
+                        <div class="row margin-top-5 margin-bottom-10">
+                            <div class="col-xs-offset-2 col-sm-offset-2 col-md-offset-2 col-lg-offset-2 col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <figure class="ava">
+                                    <a href="#">
+                                        <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 regular-12">
+                                <a href="#">1/2 копейки 1899 1909 1912 1913 спб</a>
+                                <div class="margin-top-5">
+                                    <span class="fa fa-credit-card"></span> <span>225 руб</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="cart text-center">
+                        <div class="cart-capt">
+                            <span class="fa fa-shopping-cart regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Корзина</span>
+                        </div>
+                        <div class="cart-cont regular-12">
+                            <a href="#">5</a> товаров на сумму <span>2500 руб</span>
+                        </div>
+                    </div>
+                    <div class="reg text-center margin-top-10">
+                        <div class="reg-capt">
+                            <span class="fa fa-user regular-14 margin-right-5"></span> <span class="semibold-14 uppercase">Личный кабинет</span>
+                        </div>
+                        <div class="reg-cont regular-12 margin-top-5">
+                            <a href="#" class="margin-right-10">Вход</a>
+                            <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse no-margin" role="navigation">
+                <ul class="nav-list list-unstyled max-width-class text-center">
+                    <li class="nav-item"><a href="#">Новости</a>
+                    <li class="nav-item"><a href="#">Выставки</a>
+                    <li class="nav-item"><a href="#">Бизнес</a>
+                    <li class="nav-item"><a href="#">Публикации</a>
+                    <li class="nav-item"><a href="#">Карьера</a>
+                    <li class="nav-item"><a href="#">Организации</a>
+                    <li class="nav-item"><a href="#">Продукция</a>
+                    <li class="nav-item"><a href="#">Интерактив</a>
+                    <li class="nav-item"><a href="#">Справка</a>
+                    <li class="nav-item"><a href="#">Надзор</a>
+                </ul>
+            </nav>
+            <div class="navbar navbar-default">
+                <ul class="sub-nav list-unstyled max-width-class text-center">
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>изделий</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>организаций</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Форум<br>ювелиров</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Рейтинг<br>сайтов</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Черный<br>список</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>выставки</a>
+                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>мастерские</a>
+                </ul>
+            </div>
+        </header>
+        <main class="row content max-width-class" role="main">
+            <div class="special-offers">
+                <h2 class="margin-bottom-20 regular-24 text-center txt-color-white">
+                    Специальные предложения
+                </h2>
+                <ul class="offers-list list-unstyled text-center">
+                    <li class="offers-item display-inline margin-bottom-20">
+                        <div class="offers-head margin-bottom-10">
+                            <a href="#" class="typical-link display-inline width-130">
+                                1/2 копейки 1899 1909
+                                1912 1913 спб пол коп
+                            </a>
+                        </div>
+                        <div class="offers-body">
+                            <figure class="ava">
+                                <a href="#">
+                                    <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    <li class="offers-item display-inline margin-bottom-20">
+                        <div class="offers-head margin-bottom-10">
+                            <a href="#" class="typical-link display-inline width-130">
+                                1/2 копейки 1899 1909
+                                1912 1913 спб пол коп
+                            </a>
+                        </div>
+                        <div class="offers-body">
+                            <figure class="ava">
+                                <a href="#">
+                                    <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    <li class="offers-item display-inline margin-bottom-20">
+                        <div class="offers-head margin-bottom-10">
+                            <a href="#" class="typical-link display-inline width-130">
+                                1/2 копейки 1899 1909
+                                1912 1913 спб пол коп
+                            </a>
+                        </div>
+                        <div class="offers-body">
+                            <figure class="ava">
+                                <a href="#">
+                                    <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                    <li class="offers-item display-inline margin-bottom-20">
+                        <div class="offers-head margin-bottom-10">
+                            <a href="#" class="typical-link display-inline width-130">
+                                1/2 копейки 1899 1909
+                                1912 1913 спб пол коп
+                            </a>
+                        </div>
+                        <div class="offers-body">
+                            <figure class="ava">
+                                <a href="#">
+                                    <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                </a>
+                            </figure>
+                    </li>
+                    <li class="offers-item display-inline margin-bottom-20">
+                        <div class="offers-head margin-bottom-10">
+                            <a href="#" class="typical-link display-inline width-130">
+                                1/2 копейки 1899 1909
+                                1912 1913 спб пол коп
+                            </a>
+                        </div>
+                        <div class="offers-body">
+                            <figure class="ava">
+                                <a href="#">
+                                    <img class="circle" src="http://upload.wikimedia.org/wikipedia/commons/c/c5/Abraham_Lincoln_$1_Presidential_Coin_obverse_sketch.jpg" alt="">
+                                </a>
+                            </figure>
+                        </div>
+                </ul>
+            </div>
+            <aside class="aside col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <h2 class="aside-header">Подкатегории</h2>
+                <ul class="aside-list list-unstyled">
+                    <li class="aside-item"><a href="#">100 рублей (686)</a></li>
+                    <li class="aside-item"><a href="#">10 копеек (3202)</a></li>
+                    <li class="aside-item"><a href="#">10 рублей (22818)</a></li>
+                    <li class="aside-item"><a href="#">1 копейка (2987)</a></li>
+                    <li class="aside-item"><a href="#">1 рубль (5085)</a></li>
+                    <li class="aside-item"><a href="#">20 рублей (562)</a></li>
+                    <li class="aside-item"><a href="#">25 рублей (1845)</a></li>
+                    <li class="aside-item"><a href="#">2 рубля (4669)</a></li>
+                    <li class="aside-item"><a href="#">50 копеек (3110)</a></li>
+                    <li class="aside-item"><a href="#">50 рублей (1362)</a></li>
+                    <li class="aside-item"><a href="#">5 копеек (3065)</a></li>
+                    <li class="aside-item"><a href="#">5 рублей (3288)</a></li>
+                    <li class="aside-item"><a href="#">Юбилейные монеты (26693)</a></li>
+                    <li class="aside-item"><a href="#">Разное, Россия после 1991 года (8040)</a></li>
+                </ul>
+                <div class="price-filter">
+                    <div class="regular-14">
+                        Цена (руб.)
+                    </div>
+                    <form>
+                        <input type="text" class="form-control" placeholder="от">
+                        <input type="text" class="form-control" placeholder="до">
+                    </form>
+                </div>
+            </aside>
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+
+                <section class="row popular margin-bottom-40">
+                    <h2 class="margin-bottom-40 regular-24">Россия после 1991 года</h2>
+                    <div class="pop-filters">
+                        <div class="sort inline-block">
+                            Сортировать
+                            <select class="form-control inline-block">
+                                <option>по времени до окончания</option>
+                            </select>
+                        </div><!--
+                     --><div class="pages inline-block">
+                            Страница
+                            <select class="form-control inline-block">
+                                <option>25</option>
+                            </select>
+                            из 1000
+                        </div><!--
+                     --><div class="look-btns inline-block">
+                            <button class="look-btn"><span class="fa fa-bars"></span></button>
+                            <button class="look-btn"><span class="fa fa-list"></span></button>
+                            <button class="look-btn"><span class="fa fa-th-large"></span></button>
+                        </div>
+                    </div>
+                    <div class="pop-offers">
+                        <h3 class="margin-bottom-40 regular-20">список популярных предложений</h3>
+                        <ul class="pop-offers-list list-unstyled">
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span class="txt-color-red"><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18 margin-bottom-10">85 301.17руб</div>
+                                    <div class="regular-14">с доставкой<br>92 200.00 руб</div>
+                                </div>
+                            </li>
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18">85 301.17руб</div>
+                                    <div class="regular-14 margin-bottom-5">с доставкой<br>92 200.00 руб</div>
+                                    <a class="orange-link regular-14 txt-color-orange" href="#">купить сейчас</a>
+                                </div>
+                            </li>
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18">85 301.17руб</div>
+                                    <div class="regular-14 margin-bottom-5">с доставкой<br>92 200.00 руб</div>
+                                    <a class="orange-link regular-14 txt-color-orange" href="#">купить сейчас</a>
+                                </div>
+                            </li>
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18">85 301.17руб</div>
+                                    <div class="regular-14 margin-bottom-5">с доставкой<br>92 200.00 руб</div>
+                                    <a class="orange-link regular-14 txt-color-orange" href="#">купить сейчас</a>
+                                </div>
+                            </li>
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18">85 301.17руб</div>
+                                    <div class="regular-14 margin-bottom-5">с доставкой<br>92 200.00 руб</div>
+                                    <a class="orange-link regular-14 txt-color-orange" href="#">купить сейчас</a>
+                                </div>
+                            </li>
+                            <li class="pop-offers-item">
+                                <a class="item-ava" href="#">
+                                    <img src="http://www.hdwallpaperspics.com/wp-content/uploads/2012/12/Swedish_coins_20050924.jpg" alt="">
+                                </a>                                
+                                <div class="pop-item-expires">
+                                    <a href="#">142 шт юбилейных монет России 50 разновидов + МВД</a>
+
+                                    <div class="status">
+                                        <div class="line">
+                                            <span><strong><span class="fa fa-clock-o"></span> 10 дней</strong></span> до окончания
+                                        </div>
+                                        <div class="line">
+                                            <strong>1 предмет</strong> доступен
+                                        </div>
+                                        <div class="line last">
+                                            <strong>10 пользователей</strong> сделали ставки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pop-item-price">
+                                    <div class="txt-color-red regular-18">85 301.17руб</div>
+                                    <div class="regular-14 margin-bottom-5">с доставкой<br>92 200.00 руб</div>
+                                    <a class="orange-link regular-14 txt-color-orange" href="#">купить сейчас</a>
+                                </div>
+                            </li>                            
+                        </ul>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer class="main-footer navbar navbar-default">
+            <div class="footer-cont max-width-class margin-auto">
+                <ul class="list-unstyled footer-top-bar regular-12 margin-bottom-20">
+                    <li class="footer-top-item copy">© 2014 monety.pro</li>
+                    <li class="footer-top-item"><a href="#">Новости<br>Выставки</a></li>
+                    <li class="footer-top-item"><a href="#">Бизнес<br>Публикации</a></li>
+                    <li class="footer-top-item"><a href="#">Карьера<br>Организации</a></li>
+                    <li class="footer-top-item"><a href="#">Продукция<br>Интерактив</a></li>
+                    <li class="footer-top-item"><a href="#">Справка<br>Надзор</a></li>
+                </ul>
+                <div class="contacts text-center regular-12 margin-bottom-20">
+                    Email: <a class="margin-lr-5" href="mailto:support@uvelir.info">support@uvelir.info</a> 
+                    Тел./факс: <a href="tel:+78632820411">+7(863)2820411</a>, <a href="tel:+78632820412">2820412</a>, <a href="tel:+78632820413">2820413</a>, <a href="tel:+78632820346">2820346</a>, <a href="tel:+78632820346">2820346</a>, <a href="tel:+78632401488">2401488</a>
+                </div>
+                <ul class="social list-unstyled text-center margin-bottom-20">
+                    <li class="social-item"><a href="#"> <span class="fa fa-vk"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-facebook-square"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-twitter"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-google-plus"></span> </a></li>
+                    <li class="social-item"><a href="#"> <span class="fa fa-youtube"></span> </a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
