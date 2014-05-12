@@ -36,12 +36,13 @@
                     monety.pro
                 </h1>
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 margin-top-5">
-                    <form role="form">
-                        <input type="text" class="form-control" placeholder="Text input">
+                    <form class="search-form" role="form">
+                        <input type="text" class="search-input" placeholder="Что ищем?">
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
                     </form>
                     <div class="head-actions margin-top-10 margin-bottom-10 text-center">
-                        <button type="button" class="display-inline width-130 margin-right-5 btn btn-primary regular-12 uppercase">Купить монеты</button>
-                        <button type="button" class="display-inline width-130 btn btn-success regular-12 uppercase">Продать монеты</button>
+                        <button type="button" class="header-btn blue-btn">Купить монеты</button>
+                        <button type="button" class="header-btn yel-btn">Продать монеты</button>
                     </div>
                 </div>                    
                 <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
@@ -86,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-inverse no-margin" role="navigation">
+            <nav class="main-nav" role="navigation">
                 <ul class="nav-list list-unstyled max-width-class text-center">
                     <li class="nav-item"><a href="#">Новости</a>
                     <li class="nav-item"><a href="#">Выставки</a>
@@ -100,15 +101,15 @@
                     <li class="nav-item"><a href="#">Надзор</a>
                 </ul>
             </nav>
-            <div class="navbar navbar-default">
-                <ul class="sub-nav list-unstyled max-width-class text-center">
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>изделий</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Каталог<br>организаций</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Форум<br>ювелиров</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Рейтинг<br>сайтов</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Черный<br>список</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>выставки</a>
-                    <li class="sub-nav-item"><a class="reg-color" href="#">Ювелирные<br>мастерские</a>
+            <div>
+                <ul class="sub-nav list-unstyled max-width-class">
+                    <li class="sub-nav-item cat-items"><a href="#">Каталог<br>изделий</a>
+                    <li class="sub-nav-item cat-org"><a href="#">Каталог<br>организаций</a>
+                    <li class="sub-nav-item forum"><a href="#">Форум<br>ювелиров</a>
+                    <li class="sub-nav-item rating"><a href="#">Рейтинг<br>сайтов</a>
+                    <li class="sub-nav-item black-list"><a href="#">Черный<br>список</a>
+                    <li class="sub-nav-item jew"><a href="#">Ювелирные<br>выставки</a>
+                    <li class="sub-nav-item masters"><a href="#">Ювелирные<br>мастерские</a>
                 </ul>
             </div>
         </header>
@@ -180,7 +181,7 @@
                     <li class="aside-item"><a href="#">Антикварное обозрение</a></li>
                 </ul>
             </aside>
-            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 main-cont">
 
                 <section class="ending-aucs margin-bottom-40">
                     <h2 class="margin-bottom-40 regular-24">Завершающиеся аукционы — купить лот, выставить лот</h2>
@@ -198,7 +199,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -216,7 +221,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +243,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -252,7 +265,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -270,7 +287,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -288,43 +309,11 @@
                                         <span class="fa fa-credit-card"></span> <span>225 руб</span>
                                     </div>
                                     <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <a class="img-cont text-center" href="#">
-                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
-                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
-                                    <div class="margin-top-5">
-                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
-                                    </div>
-                                    <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="lots-item col-xs-6 col-sm-6 col-md-6 col-lg-6 margin-bottom-20">
-                            <div class="row">
-                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                    <a class="img-cont text-center" href="#">
-                                        <img src="http://goldprice.org/buying-gold/uploaded_images/Australian-Lunar-Gold-Coin-Series-768203.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="lots-desc col-xs-8 col-sm-8 col-md-8 col-lg-8 regular-14 relative">
-                                    <a href="#">1/2 копейки 1899 1909 1912 1913 спб древняя спарта</a>
-                                    <div class="margin-top-5">
-                                        <span class="fa fa-credit-card"></span> <span>225 руб</span>
-                                    </div>
-                                    <div class="bottom-left">
-                                        <span class="fa fa-clock-o margin-right-5"></span> 11:25:12
+                                        <span class="cat-time"><span class="fa fa-clock-o margin-right-5"></span> 11:25:12</span>
+                                        <div class="buy-btns">
+                                            <a href="#" class="to-cart">В корзину</a>
+                                            <a href="#" class="quick-buy">Быстрая покупка</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
