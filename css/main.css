@@ -114,6 +114,10 @@
 	font-size: 14px;
 	font-weight: 400;
 }
+.regular-16 {
+	font-size: 16px;
+	font-weight: 400;
+}
 .regular-18 {
 	font-size: 18px;
 	font-weight: 400;
@@ -141,6 +145,10 @@
 .semibold-14 {
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.light-font {
+	font-weight: 300;
 }
 
 /* width */
@@ -450,7 +458,8 @@ header {
 	border-color: #628DB1;
 }
 .news-item a,
-.artcl-item a {
+.artcl-item a,
+.news-block a {
 	color: #428BCA;
 }
 
@@ -630,6 +639,138 @@ header {
 	font-size: 17px;
 }
 
+.news-content {
+	position: relative;
+}
+
+.news-content:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	width: 100%;
+	height: 56px;
+	background: url(../img/new-grad.png) no-repeat center center;
+	background-size: 100%;
+	z-index: -1;
+	opacity: .8;
+}
+
+.social {
+	margin-left: 1px
+}
+
+.pluso {
+	width: 164px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin: 15px 0;
+}
+
+.thumbs-up, .thumbs-down {
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	padding: 10px 5px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #222 !important;
+	background: #f6f8f9;
+	border: 2px solid #c4ced8;
+	border-radius: 10px;
+}
+
+.thumbs-up {
+	margin-right: 10px;
+}
+
+.thumbs-up:hover, .thumbs-down:hover {
+	background: #efefef;
+	text-decoration: none;
+}
+
+.thumbs-down .fa, .thumbs-up .fa {
+	margin-right: 5px;
+}
+
+.thumbs-down .fa {
+	color: #f5594d;
+}
+
+.thumbs-up .fa {
+	color: #6ac124;
+}
+
+.social-block h2 {
+	margin-top: 0;
+}
+
+.social-block {
+	padding: 25px 0 50px;
+}
+
+.comment {
+	position: relative;
+	font-size: 16px;
+	font-weight: 300;
+	background: #f6f6f1;
+	padding: 20px;
+	border-radius: 15px;
+	margin-bottom: 50px;
+}
+
+.comment:after {
+	content: "";
+	position: absolute;
+	bottom: -29px;
+	right: 50px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 30px 30px 0;
+	border-color: transparent #f6f6f1 transparent transparent;
+}
+
+.comment-leave {
+	border-radius: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 20px;
+	margin-bottom: 50px;
+	background: #ebeff4;
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    2px 2px 10px 0px rgba(50, 50, 50, 0.5);
+	box-shadow:         2px 2px 10px 0px rgba(50, 50, 50, 0.5);
+}
+
+.comment-leave textarea {
+	display: block;
+	width: 100%;
+	height: 180px;
+	background: #fff;
+	border: 0 none;
+	resize: none;
+}
+
+.comment-btn {
+	border: 0 none;
+	border-bottom: 2px solid #d94613;
+	border-radius: 20px;
+	color: #fff;
+	background: #ff7443;
+	font-weight: 400;
+	margin-top: 15px;
+	padding: 10px 20px;
+	outline: 0 none;
+}
+
+.comment-btn:hover {
+	background: #ff6537;
+}
+
+.comment-btn:active {
+	outline: 0 none;
+	background: #d94613;
+}
 
 /* Transition classes */
 .nav-item > a,
